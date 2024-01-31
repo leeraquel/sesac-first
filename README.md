@@ -1,3 +1,3 @@
-# sesac-first
+# sesac-first-repository
 
 ## SeSac Git class Practicing
