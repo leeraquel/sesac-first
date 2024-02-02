@@ -4,6 +4,292 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SeSAC</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <h1 class="title">SeSAC HTML</h1>
+    <div class="flexRow">
+      <div class="description">
+        <ul>
+          <li>하드 코딩은 오랜만이라</li>
+          <li>손이 잘 안 움직여요</li>
+          <li>다중 커서를 만드는 단축키도 기억이 안나요</li>
+          <li>opt+cmd 였습니다~</li>
+          <li>헉 그러고 보니까 라이브 서버 안 써봤는데 잘 됐다.</li>
+          <li>React처럼 저장만 눌러도 변경사항이 적용되니까 조항요</li>
+        </ul>
+        <ol type="i" start="1">
+          <li>내일은 기대하던 영화를 보러가요.</li>
+          <li>미리 예습도 했답니다.</li>
+          <li>찰리와 초콜릿 공장을 재탕했어요.</li>
+          <li>재동이가 티모시 샬라메를 좋아하고</li>
+          <li>찰초공도 좋아해서 아주 좋아요.</li>
+          <li>내일도 얼큰하게 놀 수 있어요.</li>
+        </ol>
+      </div>
+      <div class="flexColumn">
+        <div class="secondContent">
+          <span class="span"> 한 줄 안에 쓰고 싶을 때는 span을 사용해요. </span>
+          <span class="span">
+            그런데 코가 너무 막혀서 아무 생각이 안나요.
+          </span>
+        </div>
+        <div class="flexRow">
+          <div class="textBoxWrapper">
+            <div>
+              <input type="checkbox" name="todo" id="firstTodo" />
+              <label for="firstTodo">사전 과제 제출하기</label>
+            </div>
+            <div>
+              <input type="checkbox" name="todo" id="secondTodo" />
+              <label for="secondTodo">저녁 한약 먹기</label>
+            </div>
+            <div>
+              <input type="checkbox" name="todo" id="thirdTodo" />
+              <label for="thirdTodo">흉터 연고 바르기</label>
+            </div>
+            <div>
+              <input type="checkbox" name="todo" id="lastTodo" />
+              <label for="lastTodo">마스크 팩 하기</label>
+            </div>
+          </div>
+          <div class="flexColumn">
+            <div>
+              <a href="https://github.com/leeraquel/sesac-first" target="_blank"
+                >Come to my git hub</a
+              >
+            </div>
+            <div>
+              <a href="./start.html" target="_blank">Show new html</a>
+            </div>
+          </div>
+          <div>
+            <h3>아이스 카페라떼 만드는 법</h3>
+            <ol type="a">
+              <li><strong>우유</strong>를 180ml 컵에 넣습니다.</li>
+              <li><i>얼음</i>을 가득 넣습니다.</li>
+              <li><i>에스프레소 샷</i>을 넣어주면!</li>
+              <li>완성입니다 맛있게 드세요</li>
+            </ol>
+          </div>
+        </div>
+        <div class="imgWrapper">
+          <img
+            class="img"
+            src="https://img.tvreportcdn.de/cms-content/uploads/2023/12/11/6cd3f7b7-b886-429d-9360-48afb53f65e5.jpg"
+            alt="웡카"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flexRow" style="margin: 32px 0">
+      <form
+        id="surveyForm"
+        class="formWrapper"
+        style="
+          background-color: aliceblue;
+          border-radius: 20px;
+          padding: 24px;
+          height: 100%;
+        "
+      >
+        <h2>설문조사</h2>
+        <label for="name">이름</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="이름을 입력 하세요"
+          style="margin-bottom: 16px"
+        />
+        <br />
+        <label for="email">이메일</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="love@example.com"
+        />
+        <h3>나이</h3>
+        <input type="radio" name="age" id="10" value="10" />
+        <label for="10">10대</label>
+        <input type="radio" name="age" id="20" value="20" />
+        <label for="20">20대</label>
+        <input type="radio" name="age" id="30" value="30" />
+        <label for="30">30대</label>
+        <input type="radio" name="age" id="40" value="40" />
+        <label for="40">40대</label>
+        <h3>원하는 강의(복수응답 가능합니다.)</h3>
+        <input
+          class="blueCheck"
+          type="checkbox"
+          id="html"
+          name="course"
+          value="HTML"
+        />
+        <label for="html">HTML</label>
+        <input
+          class="blueCheck"
+          type="checkbox"
+          id="css"
+          name="course"
+          value="CSS"
+        />
+        <label for="css">CSS</label>
+        <input
+          class="blueCheck"
+          type="checkbox"
+          id="javaScript"
+          name="course"
+          value="javaScript"
+        />
+        <label for="javaScript">javaScript</label>
+        <div
+          style="
+            min-height: 200px;
+            min-width: 400px;
+            border: solid 1px lightblue;
+          "
+        >
+          <textarea
+            name="additionalNotes"
+            placeholder="원하는 내용을 입력하세요."
+            style="width: 99%; height: 198px; border: none; outline: none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          style="
+            margin-top: 20px;
+            padding: 8px;
+            background-color: skyblue;
+            border: none;
+            border-radius: 10px;
+          "
+        >
+          제출하기
+        </button>
+      </form>
+      <div class="flexColumn">
+        <table class="BoxPractice">
+          <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+          </tr>
+          <tr>
+            <td rowspan="2">3</td>
+            <td>center</td>
+          </tr>
+          <tr>
+            <td colspan="2">4</td>
+          </tr>
+        </table>
+        <table class="menu">
+          <tbody>
+            <tr>
+              <td>구분</td>
+              <td>음료</td>
+              <td>가격</td>
+              <td>이미지</td>
+            </tr>
+            <tr>
+              <td rowspan="2">커피류</td>
+              <td>아메리카노</td>
+              <td>4200원</td>
+              <td>
+                <a
+                  href="https://www.starbucks.com/menu/product/406/iced"
+                  target="_blank"
+                >
+                  <img
+                    style="height: 100px; border-radius: 4px"
+                    src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190607_IcedCaffeAmericano.jpg?impolicy=1by1_wide_topcrop_630"
+                    alt="americano"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <!-- <td>1</td> -->
+              <td>돌체라떼</td>
+              <td>4800원</td>
+              <td>
+                <a
+                  href="https://www.starbucks.com/menu/product/414/iced"
+                  target="_blank"
+                >
+                  <img
+                    style="height: 100px; border-radius: 4px"
+                    src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CinnamonDolceLatte.jpg?impolicy=1by1_wide_topcrop_630"
+                    alt="dolceLatte"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">주스류</td>
+              <td>자바칩 프라푸치노</td>
+              <td rowspan="2">5000원</td>
+              <td>
+                <a
+                  href="https://www.starbucks.com/menu/product/425/iced"
+                  target="_blank"
+                >
+                  <img
+                    style="height: 100px; border-radius: 4px"
+                    src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190528_JavaChipFrapp.jpg?impolicy=1by1_wide_topcrop_630"
+                    alt="javaChipFrapp"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>녹차 프라푸치노</td>
+              <td>
+                <a
+                  href="https://www.starbucks.com/menu/product/439/iced"
+                  target="_blank"
+                >
+                  <img
+                    style="height: 100px; border-radius: 4px"
+                    src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20181127_MatchaGreenTeaFrapp.jpg?impolicy=1by1_wide_topcrop_630"
+                    alt="javaChipFrapp"
+                  />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script>
+    document
+      .getElementById("surveyForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var ageGroup = document.querySelector('input[name="age"]:checked')
+          ? document.querySelector('input[name="age"]:checked').value
+          : "선택되지 않음";
+        var courses = [];
+        document
+          .querySelectorAll('input[name="course"]:checked')
+          .forEach(function (course) {
+            courses.push(course.value);
+          });
+        var additionalNotes = document.querySelector(
+          'textarea[name="additionalNotes"]'
+        ).value;
+
+        console.log("이름:", name);
+        console.log("이메일:", email);
+        console.log("나이 그룹:", ageGroup);
+        console.log("선택된 강의:", courses.join(", "));
+        console.log("추가 노트:", additionalNotes);
+      });
+  </script>
 </html>

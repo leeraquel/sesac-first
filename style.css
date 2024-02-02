@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "seolleimcool-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "seolleimcool-SemiBold";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul,
+ol {
+  /* margin-block-start: 0px;
+  margin-block-end: 0px; */
+  padding-inline-start: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  color: rgb(255, 88, 116);
+  font-style: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* 체크박스 크기 */
+  height: 20px; /* 체크박스 크기 */
+  background-color: white; /* 원하는 배경색 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: lightpink; /* 체크됐을 때의 배경색 */
+}
+
+.BoxPractice {
+  min-width: 400px;
+  min-height: 300px;
+  border-collapse: collapse;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: pink;
+  text-shadow: 1px 1px 0 red;
+}
+
+.description {
+  max-width: 800px;
+  background-color: beige;
+  padding: 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.span {
+  margin-right: 32px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgb(210, 244, 255);
+}
+
+.textBoxWrapper > * {
+  margin-bottom: 16px;
+}
+
+.textBoxWrapper {
+  padding: 16px;
+  background-color: rgb(255, 226, 230);
+  border-radius: 10px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textBoxWrapper :last-child {
+  margin-bottom: 0px;
+}
+
+.secondContent {
+  margin: 0 0 24px 0;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.img {
+  border-radius: 10px;
+  max-height: 300px;
+}
+
+.blueCheck[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* 체크박스 크기 */
+  height: 20px; /* 체크박스 크기 */
+  background-color: white; /* 원하는 배경색 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+  vertical-align: middle;
+}
+
+.blueCheck[type="checkbox"]:checked {
+  background-color: rgb(138, 201, 255); /* 체크됐을 때의 배경색 */
+}
