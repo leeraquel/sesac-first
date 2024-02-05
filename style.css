@@ -1,3 +1,5 @@
+@import url(./subStyle.css);
+
 @font-face {
   font-family: "seolleimcool-SemiBold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2")
@@ -14,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 64px;
 }
 
 ul,
@@ -152,4 +155,9 @@ td {
 
 .blueCheck[type="checkbox"]:checked {
   background-color: rgb(138, 201, 255); /* 체크됐을 때의 배경색 */
+}
+
+.cssP {
+  background-color: red;
+  color: white;
 }
