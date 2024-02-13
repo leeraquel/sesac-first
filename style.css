@@ -161,3 +161,88 @@ td {
   background-color: red;
   color: white;
 }
+
+.flexColumnNoGap {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+#first {
+  background-color: blue;
+}
+
+.second {
+  background-color: green;
+}
+
+span {
+  background-color: red;
+}
+
+.hey::before {
+  content: "hello";
+}
+
+.hey::after {
+  content: "bye";
+}
+
+.stripes div:nth-child(1),
+.stripes div:nth-child(3),
+.stripes div:nth-child(5),
+.stripes div:nth-child(5),
+.stripes div:nth-child(7) {
+  background-color: navy;
+  color: white;
+}
+
+.stripes div:nth-child(2),
+.stripes div:nth-child(4),
+.stripes div:nth-child(6) {
+  background-color: yellow;
+  color: black;
+}
+
+.title:hover {
+  background-color: #ff5353; /* 원하는 배경색으로 변경 */
+  color: #333; /* 원하는 글자색으로 변경 */
+}
+
+.suggestion-box:focus {
+  background-color: #e8e8e8; /* 클릭하고 커서가 깜빡거릴 때의 배경색 */
+}
+
+/* 체크박스에 체크했을 때 글씨 배경색 변경 */
+.styled-checkbox1:checked + label {
+  background-color: red; /* 원하는 배경색으로 변경 */
+  color: #000; /* 원하는 글자색으로 변경 */
+}
+.styled-checkbox2:checked + label {
+  background-color: blue; /* 원하는 배경색으로 변경 */
+  color: #000; /* 원하는 글자색으로 변경 */
+}
+.styled-checkbox3:checked + label {
+  background-color: yellow; /* 원하는 배경색으로 변경 */
+  color: #000; /* 원하는 글자색으로 변경 */
+}
+
+/* 제출 버튼 클릭하는 순간 색과 글자 색 변경 */
+.submit-button:active {
+  background-color: #4caf50; /* 버튼 클릭 시 배경색 */
+  color: white; /* 버튼 클릭 시 글자색 */
+}
+
+.px {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+}
+
+.em-text {
+  font-size: 2em;
+}
+
+.rem-text {
+  font-size: 2rem;
+}

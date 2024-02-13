@@ -273,16 +273,79 @@
         </table>
       </div>
     </div>
-    <div class="css">
-      <h2>CSS style 적용 방법 3가지</h2>
-      <div style="background-color: aquamarine">inline 적용 방법</div>
-      <h1 class="cssH1" style="background-color: green; color: white">
-        3가지 CSS 스타일 적용법
-      </h1>
-      <h2 class="cssH2">내장 방식 배경 파랑 글자 하양</h2>
-      <p class="cssP">링크 방식 배경 빨강 글자 하양</p>
-      <span class="cssSpan">import 배경 주황 글자 파랑</span>
-      <h3 class="cssH3">배경 검정, 글자 흰색</h3>
+    <div class="flexRow">
+      <div class="flexColumnNoGap">
+        <h2>CSS style 적용 방법 3가지</h2>
+        <div style="background-color: aquamarine">inline 적용 방법</div>
+        <h1 class="cssH1" style="background-color: green; color: white">
+          3가지 CSS 스타일 적용법
+        </h1>
+        <h2 class="cssH2">내장 방식 배경 파랑 글자 하양</h2>
+        <p class="cssP">링크 방식 배경 빨강 글자 하양</p>
+        <span class="cssSpan">import 배경 주황 글자 파랑</span>
+        <h3 class="cssH3">배경 검정, 글자 흰색</h3>
+      </div>
+      <div class="flexColumnNoGap" style="background-color: gray">
+        <h1>기본 선택자 연습해보기</h1>
+        <p>기본선택자 연습을 해보아요!</p>
+        <span>안녕하세요.</span>
+        <ol>
+          <li id="first">1</li>
+          <li class="second">2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ol>
+      </div>
+      <div class="hey">여기요!</div>
+      <div class="stripes">
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+      </div>
+      <div class="flexColumn" style="align-items: center">
+        <h3 class="title" style="width: 100%">제목</h3>
+        <textarea
+          class="suggestion-box"
+          placeholder="건의 사항을 적어주세요.🎈"
+        ></textarea>
+        <div>
+          <input type="checkbox" class="styled-checkbox1" id="checkbox" />
+          <label for="checkbox">빨강</label>
+          <input type="checkbox" class="styled-checkbox2" id="checkbox2" />
+          <label for="checkbox2">파랑</label>
+          <input type="checkbox" class="styled-checkbox3" id="checkbox3" />
+          <label for="checkbox3">노랑</label>
+        </div>
+        <button class="submit-button">제출</button>
+      </div>
+    </div>
+    <div class="Sizewrapper">
+      <h2 class="title">size</h2>
+      <div class="px">100px</div>
+      <p>em은 상위 컨텐츠의 픽셀을 가져와 상대적으로 늘림. 상위에 따라 변함</p>
+      <div class="em-text">
+        em
+        <div class="em-text">
+          em
+          <div class="em-text">em</div>
+        </div>
+      </div>
+      <p>
+        rem은 root 요소의 폰트의 상대값으로 측정. 기본 16px이지만<br />
+        12px기준으로 제작이 가장 흔함.
+      </p>
+      <div class="rem-text">
+        rem
+        <div class="rem-text">
+          rem
+          <div class="rem-text">rem</div>
+        </div>
+      </div>
     </div>
   </body>
   <script>
