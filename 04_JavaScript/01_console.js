@@ -55,3 +55,24 @@ function sum(num1, num2) {
 }
 
 console.log(sum(3, 6));
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+console.log(multiply(7, 3));
+
+function square(num) {
+  return num * num;
+}
+
+console.log(square(3));
+
+let ifOdd = function odd(num) {
+  if (num % 2 == 0) {
+    return `${num}은 짝수입니다.`;
+  } else return `${num}은 홀수입니다.`;
+};
+
+let result = ifOdd(20942);
+console.log(result);
