@@ -146,3 +146,72 @@ function timesTable() {
 }
 
 timesTable();
+
+//for
+let i = 0;
+let sum = 0;
+for (i = 0; i <= 100; i++) {
+  if (i % 2 == 0 || i % 5 == 0) {
+    sum += i;
+  }
+}
+
+console.log(sum);
+
+//while
+i = 0;
+sum = 0;
+while (i <= 100) {
+  if (i % 2 == 0 || i % 5 == 0) {
+    sum += i;
+  }
+  i++;
+}
+console.log(sum);
+
+function calculate() {
+  for (i = 0; i < 10000; i++) {
+    if (i % 13 === 0 && i % 2 === 1) {
+      console.log(i);
+    }
+  }
+}
+
+function promptCalculate() {
+  let num = prompt("enter your number");
+  for (i = 0; i < num; i++) {
+    if (i % 13 === 0 && i % 2 === 1) {
+      console.log(i);
+    }
+  }
+}
+
+// calculate();
+// promptCalculate();
+
+function arrSum() {
+  let arr = [];
+  let sum = 0;
+  for (i = 1; i <= 100; i++) {
+    arr.push(i);
+  }
+
+  for (i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(`for : ${sum}`);
+  sum = 0;
+
+  for (let n of arr) {
+    sum += n;
+  }
+  console.log(`for of : ${sum}`);
+  sum = 0;
+
+  arr.forEach(function (num) {
+    sum += num;
+  });
+  console.log(`forEach : ${sum}`);
+}
+
+arrSum();
