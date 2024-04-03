@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <style>
+      ul {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul p {
+        width: 200px;
+      }
+      ul img {
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cat"></div>
+    <h3>API</h3>
+    <button onclick="getMovieData()">영화 받아오기</button>
+    <button onclick="createMovieData()">영화 띄우기</button>
+    <ul></ul>
+  </body>
+  <script type="module" src="./04_api.js" defer></script>
+</html>
